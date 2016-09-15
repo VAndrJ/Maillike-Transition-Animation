@@ -12,6 +12,8 @@
 		A37835EA1D89596A004C0A57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A37835E81D89596A004C0A57 /* Main.storyboard */; };
 		A37835EC1D89596A004C0A57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A37835EB1D89596A004C0A57 /* Assets.xcassets */; };
 		A37835EF1D89596A004C0A57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A37835ED1D89596A004C0A57 /* LaunchScreen.storyboard */; };
+		A37835F71D897774004C0A57 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37835F61D897774004C0A57 /* SecondViewController.swift */; };
+		A38F0E121D897D7E005C18F2 /* TransitionMailLikeAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38F0E111D897D7E005C18F2 /* TransitionMailLikeAnimator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		A37835EB1D89596A004C0A57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A37835EE1D89596A004C0A57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A37835F01D89596A004C0A57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A37835F61D897774004C0A57 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		A38F0E111D897D7E005C18F2 /* TransitionMailLikeAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionMailLikeAnimator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				A37835EB1D89596A004C0A57 /* Assets.xcassets */,
 				A37835ED1D89596A004C0A57 /* LaunchScreen.storyboard */,
 				A37835F01D89596A004C0A57 /* Info.plist */,
+				A38F0E111D897D7E005C18F2 /* TransitionMailLikeAnimator.swift */,
+				A37835F61D897774004C0A57 /* SecondViewController.swift */,
 			);
 			path = ModalView;
 			sourceTree = "<group>";
@@ -136,8 +142,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A37835F71D897774004C0A57 /* SecondViewController.swift in Sources */,
 				A37835E71D89596A004C0A57 /* ViewController.swift in Sources */,
 				A37835E51D89596A004C0A57 /* AppDelegate.swift in Sources */,
+				A38F0E121D897D7E005C18F2 /* TransitionMailLikeAnimator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +307,7 @@
 				A37835F51D89596A004C0A57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

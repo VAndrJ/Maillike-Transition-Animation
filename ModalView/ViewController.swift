@@ -9,17 +9,40 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    let transition = TransitionMailLikeAnimator()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 
+// MARK: Buttons
+extension ViewController {
+    
+    @IBAction func btnClick(_ sender: AnyObject) {
+        let secondViewController = storyboard!.instantiateViewController(withIdentifier: "SecondViewController") as! SecondViewController
+        secondViewController.transitioningDelegate = self
+        secondViewController.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
+        present(secondViewController, animated: true, completion: nil)
+    }
+}
+
+// MARK: Transition
+extension ViewController: UIViewControllerTransitioningDelegate {
+    
+    func animationController(
+        forPresented presented: UIViewController,
+        presenting: UIViewController,
+        source: UIViewController) ->
+        UIViewControllerAnimatedTransitioning? {
+            transition.presenting = true
+            transition.duration = 0.5
+            return transition
+    }
+    
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        transition.presenting = false
+        return transition
+    }
+}
